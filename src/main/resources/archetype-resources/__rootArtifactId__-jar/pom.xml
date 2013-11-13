@@ -8,11 +8,11 @@
       <artifactId>${rootArtifactId}</artifactId>
       <groupId>${groupId}</groupId>
       <version>${version}</version>
-   </parent>
+	</parent>
 
-   <artifactId>${rootArtifactId}-jar</artifactId>
-   <packaging>jar</packaging>
+	<artifactId>${rootArtifactId}-jar</artifactId>
+	<packaging>jar</packaging>
 
-   <name>${rootArtifactId}: JAR Module</name>
+	<name>${rootArtifactId}: JAR Module</name>
 
 </project>
