@@ -5,13 +5,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-        <artifactId>${rootArtifactId}</artifactId>
-        <groupId>${groupId}</groupId>
-        <version>${version}</version>
-    </parent>
-	
+		<groupId>${groupId}</groupId>
+		<artifactId>${rootArtifactId}-pom</artifactId>
+		<version>${version}</version>
+	</parent>
+
 	<artifactId>${rootArtifactId}-ear</artifactId>
-    <packaging>ear</packaging>
+	<packaging>ear</packaging>
 
 	<name>${rootArtifactId}: EAR Module</name>
 
@@ -25,41 +25,48 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-ear-plugin</artifactId>
 				<version>2.8</version>
+				<!-- 
 				<configuration>
-					<!-- http://maven.apache.org/plugins/maven-ear-plugin/ -->
-					<version>6</version>
-					<defaultLibBundleDir>lib</defaultLibBundleDir>
-					<!-- <generateApplicationXml>false</generateApplicationXml> <earSourceDirectory>EarContent</earSourceDirectory> 
-						<applicationXml>EarContent/META-INF/application.xml</applicationXml> <modules> 
-						<webModule> <groupId>org.foo2</groupId> <artifactId>test-war</artifactId> 
-						<contextRoot>/custom-context-root</contextRoot> </webModule> <ejbModule> 
-						<groupId>org.foo2</groupId> <artifactId>test-ejb</artifactId> <bundleFileName>anothername.jar</bundleFileName> 
-						</ejbModule> <jarModule> <groupId>org.foo2</groupId> <artifactId>test-jar</artifactId> 
-						</jarModule> </modules> -->
+					<modules>
+						<webModule>
+							<groupId>${groupId}</groupId>
+							<artifactId>${rootArtifactId}-web</artifactId>
+							<contextRoot>/${rootArtifactId}</contextRoot>
+						</webModule>
+						<ejbModule>
+							<groupId>${groupId}</groupId>
+							<artifactId>${rootArtifactId}-ejb</artifactId>
+						</ejbModule>
+						<jarModule>
+							<groupId>${groupId}</groupId>
+							<artifactId>${rootArtifactId}-jar</artifactId>
+						</jarModule>
+					</modules>
 				</configuration>
+				-->
 			</plugin>
 		</plugins>
 	</build>
 
 	<dependencies>
-        <dependency>
-            <groupId>${groupId}</groupId>
-            <artifactId>${rootArtifactId}-web</artifactId>
-			<version>${version}</version>
-            <type>war</type>
-        </dependency>
-        <dependency>
-            <groupId>${groupId}</groupId>
-            <artifactId>${rootArtifactId}-ejb</artifactId>
-			<version>${version}</version>
-            <type>ejb</type>
-        </dependency>
 		<dependency>
-            <groupId>${groupId}</groupId>
-            <artifactId>${rootArtifactId}-jar</artifactId>
+			<groupId>${groupId}</groupId>
+			<artifactId>${rootArtifactId}-web</artifactId>
 			<version>${version}</version>
-            <type>jar</type>
-        </dependency>
-    </dependencies>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>${groupId}</groupId>
+			<artifactId>${rootArtifactId}-ejb</artifactId>
+			<version>${version}</version>
+			<type>ejb</type>
+		</dependency>
+		<dependency>
+			<groupId>${groupId}</groupId>
+			<artifactId>${rootArtifactId}-jar</artifactId>
+			<version>${version}</version>
+			<type>jar</type>
+		</dependency>
+	</dependencies>
 
 </project>
