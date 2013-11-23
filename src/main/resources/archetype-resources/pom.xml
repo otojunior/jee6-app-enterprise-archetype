@@ -12,7 +12,7 @@
 
 	<modules>
 		<module>${rootArtifactId}-ejb</module>
-		<module>${rootArtifactId}-web</module>
+		<module>${rootArtifactId}</module>
 		<module>${rootArtifactId}-ear</module>
 		<module>${rootArtifactId}-jar</module>
 	</modules>

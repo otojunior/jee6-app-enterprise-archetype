@@ -10,7 +10,7 @@
 		<version>${version}</version>
 	</parent>
 
-	<artifactId>${rootArtifactId}-web</artifactId>
+	<artifactId>${rootArtifactId}</artifactId>
 	<packaging>war</packaging>
 
 	<name>${rootArtifactId}: WAR Module</name>
