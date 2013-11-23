@@ -94,28 +94,10 @@
 		</module>
         <module id="${rootArtifactId}-ear" dir="__rootArtifactId__-ear" name="${rootArtifactId}-ear">
 			<fileSets>
-				<fileSet filtered="true" packaged="true" encoding="UTF-8">
-					<directory>src/main/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
 				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/resources</directory>
+					<directory>src/main/application</directory>
 					<includes>
-						<include>**/*.xml</include>
-					</includes>
-				</fileSet>
-				<fileSet encoding="UTF-8">
-					<directory>src/test/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/resources</directory>
-					<includes>
-						<include>**/*.xml</include>
+						<include>**/*</include>
 					</includes>
 				</fileSet>
 			</fileSets>
