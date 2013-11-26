@@ -124,6 +124,28 @@
 				</plugins>
 			</build>
 		</profile>
+		
+		<profile>
+			<id>jboss-profile</id>
+			<build>
+				<plugins>
+					<plugin>
+		                <groupId>org.jboss.as.plugins</groupId>
+		                <artifactId>jboss-as-maven-plugin</artifactId>
+		                <version>7.5.Final</version>
+		                <executions>
+		                    <execution>
+		                        <phase>install</phase>
+		                        <goals>
+		                            <goal>run</goal>
+		                        </goals>
+		                    </execution>
+		                </executions>
+		            </plugin>
+				</plugins>
+			</build>
+		</profile>
+		
 	</profiles>
 
 </project>
