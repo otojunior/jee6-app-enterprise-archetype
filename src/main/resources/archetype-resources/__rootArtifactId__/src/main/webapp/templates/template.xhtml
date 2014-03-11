@@ -8,15 +8,16 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title><ui:insert name="page_title">Título padrão da página (pode ser sobrescrito)</ui:insert></title>
 	
-	<link rel="stylesheet" type="text/css" href="../resources/css/view.css" media="all" />
-	<script type="text/javascript" src="../resources/js/view.js"></script>
-	<script type="text/javascript" src="../resources/js/calendar.js"></script>
+	<h:outputStylesheet library="css" name="view.css"/>
+	
+	<h:outputScript library="js" name="view.js" />
+	<h:outputScript library="js" name="calendar.js" />
 	
 </h:head>
 
 <h:body id="main_body">
 
-	<img id="top" src="../resources/gfx/top.png"/>
+	<h:graphicImage id="top" value="#{contextRoot}/resources/gfx/top.png"/>
 
 	<h:panelGroup id="form_container" layout="block">
 		<h1><a>&nbsp;</a></h1>
@@ -47,6 +48,6 @@
 		</h:panelGroup>
 	</h:panelGroup>
 
-	<img id="bottom" src="../resources/gfx/bottom.png"/>
+	<h:graphicImage id="bottom" value="${contextRoot}/resources/gfx/bottom.png"/>
 </h:body>
 </html>
