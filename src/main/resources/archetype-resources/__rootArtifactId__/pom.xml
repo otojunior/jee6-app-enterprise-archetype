@@ -21,12 +21,15 @@
 			<artifactId>${rootArtifactId}-ejb</artifactId>
 			<version>${version}</version>
 			<type>ejb</type>
+			<scope>provided</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>${groupId}</groupId>
 			<artifactId>${rootArtifactId}-jar</artifactId>
 			<version>${version}</version>
 			<type>jar</type>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
