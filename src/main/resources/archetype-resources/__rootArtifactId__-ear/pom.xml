@@ -29,6 +29,7 @@
 				 
 				<configuration>
 					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<skinnyWars>true</skinnyWars>
 					<!-- 
 					<modules>
 						<webModule>
