@@ -9,6 +9,15 @@
 					<includes>
 						<include>**/*</include>
 					</includes>
+					<excludes>
+						<exclude>demo/**</exclude>
+					</excludes>
+				</fileSet>
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>demo/**</include>
+					</includes>
 				</fileSet>
 				<fileSet filtered="true" encoding="UTF-8">
 					<directory>src/main/resources</directory>
@@ -20,6 +29,15 @@
 					<directory>src/test/java</directory>
 					<includes>
 						<include>**/*</include>
+					</includes>
+					<excludes>
+						<exclude>demo/**</exclude>
+					</excludes>
+				</fileSet>
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/test/java</directory>
+					<includes>
+						<include>demo/**</include>
 					</includes>
 				</fileSet>
 				<fileSet filtered="true" encoding="UTF-8">
@@ -37,6 +55,15 @@
 					<includes>
 						<include>**/*</include>
 					</includes>
+					<excludes>
+						<exclude>demo/**</exclude>
+					</excludes>
+				</fileSet>
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>demo/**</include>
+					</includes>
 				</fileSet>
 				<fileSet filtered="true" encoding="UTF-8">
 					<directory>src/main/resources</directory>
@@ -48,6 +75,15 @@
 					<directory>src/test/java</directory>
 					<includes>
 						<include>**/*</include>
+					</includes>
+					<excludes>
+						<exclude>demo/**</exclude>
+					</excludes>
+				</fileSet>
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/test/java</directory>
+					<includes>
+						<include>demo/**</include>
 					</includes>
 				</fileSet>
 				<fileSet filtered="true" encoding="UTF-8">
@@ -64,6 +100,15 @@
 					<directory>src/main/java</directory>
 					<includes>
 						<include>**/*</include>
+					</includes>
+					<excludes>
+						<exclude>demo/**</exclude>
+					</excludes>
+				</fileSet>
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>demo/**</include>
 					</includes>
 				</fileSet>
 				<fileSet filtered="true" encoding="UTF-8">
@@ -95,6 +140,15 @@
 					<directory>src/test/java</directory>
 					<includes>
 						<include>**/*</include>
+					</includes>
+					<excludes>
+						<exclude>demo/**</exclude>
+					</excludes>
+				</fileSet>
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/test/java</directory>
+					<includes>
+						<include>demo/**</include>
 					</includes>
 				</fileSet>
 				<fileSet filtered="true" encoding="UTF-8">

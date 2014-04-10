@@ -16,20 +16,8 @@ import org.slf4j.LoggerFactory;
 public class SampleManagedBean {
 	private static final Logger LOG = LoggerFactory.getLogger(SampleManagedBean.class);
 	
-	@PersistenceContext
-	private EntityManager entityManager;
-	
 	public String sampleAction() {
 		LOG.info("Managed Bean Action Performed!");
-		
-		final String JPQL = "select s from SampleEntity s";
-		
-		List<SampleEntity> resultList = entityManager.
-			createQuery(JPQL, SampleEntity.class).
-			getResultList();
-		
-		LOG.info("Result List: {}", resultList);
-		
 		return null;
 	}
 }
