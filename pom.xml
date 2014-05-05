@@ -12,6 +12,24 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<scm>
+		<developerConnection>scm:git:git@github.com:otojunior/jee6-app-enterprise-archetype.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>cloudbees</id>
+			<name>Realease repository</name>
+			<url>dav:https://repository-otojunior.forge.cloudbees.com/release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>cloudbees</id>
+			<name>Snapshot repository</name>
+			<url>dav:https://repository-otojunior.forge.cloudbees.com/snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
