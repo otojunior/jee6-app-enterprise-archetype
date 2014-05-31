@@ -15,6 +15,11 @@
 
 	<name>${rootArtifactId}: WAR Module</name>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<plugin.version.maven-war-plugin>2.4</plugin.version.maven-war-plugin>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>${groupId}</groupId>
@@ -39,7 +44,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.4</version>
+				<version>${plugin.version.maven-war-plugin}</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>

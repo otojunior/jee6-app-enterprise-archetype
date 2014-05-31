@@ -7,10 +7,14 @@
 	<packaging>jar</packaging>
 	
 	<properties>
-		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<extension.version.wagon>1.0-beta-2</extension.version.wagon>
+		<plugin.version.java>1.7</plugin.version.java>
+		<plugin.version.maven-compiler-plugin>3.1</plugin.version.maven-compiler-plugin>
 		<plugin.version.maven-release-plugin>2.5</plugin.version.maven-release-plugin>
+		<plugin.version.maven-source-plugin>2.2.1</plugin.version.maven-source-plugin>
+		<plugin.version.maven-javadoc-plugin>2.9.1</plugin.version.maven-javadoc-plugin>
+		<plugin.version.maven-surefire-plugin>2.16</plugin.version.maven-surefire-plugin>
 	</properties>
 
 	<scm>
@@ -44,11 +48,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>${plugin.version.maven-compiler-plugin}</version>
 				<configuration>
 					<!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
-					<source>${java.version}</source>
-					<target>${java.version}</target>
+					<source>${plugin.version.java}</source>
+					<target>${plugin.version.java}</target>
 				</configuration>
 			</plugin>
 			
