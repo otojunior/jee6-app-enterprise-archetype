@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<archetype-descriptor name="jee6-app-enterprise-archetype">
+<archetype-descriptor name="jee6-app-enterprise-archetype" 
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modules>
 		<module id="${rootArtifactId}-jar" dir="__rootArtifactId__-jar" name="${rootArtifactId}-jar">
 			<fileSets>
@@ -170,4 +172,12 @@
 			</fileSets>
 		</module>
     </modules>
+    <fileSets>
+    	<fileSet encoding="UTF-8">
+			<directory/>
+			<includes>
+				<include>.gitignore</include>
+			</includes>
+		</fileSet>
+	</fileSets>
 </archetype-descriptor>
