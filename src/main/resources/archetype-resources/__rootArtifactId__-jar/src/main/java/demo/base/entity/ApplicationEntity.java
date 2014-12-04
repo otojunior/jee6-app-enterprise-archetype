@@ -1,6 +1,3 @@
-/**
- * 
- */
 package demo.base.entity;
 
 import javax.persistence.GeneratedValue;
@@ -14,7 +11,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author Oto
+ * Application Entity
+ * @author [Author Name]
  * 
  */
 @MappedSuperclass

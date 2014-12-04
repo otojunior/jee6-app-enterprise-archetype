@@ -1,6 +1,3 @@
-/**
- * 
- */
 package demo.crud.entity;
 
 import java.util.Date;
@@ -16,7 +13,8 @@ import javax.validation.constraints.NotNull;
 import demo.base.entity.ApplicationEntity;
 
 /**
- * @author Oto
+ * Example Entity
+ * @author [Author Name]
  *
  */
 @Entity

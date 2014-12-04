@@ -1,6 +1,3 @@
-/**
- * 
- */
 package demo.crud.dao;
 
 import java.util.List;
@@ -13,9 +10,11 @@ import demo.base.dao.ApplicationDao;
 import demo.crud.entity.CrudEntity;
 
 /**
- * @author Oto
+ * Example Crud DAO.
+ * @author [Author Name]
  *
  */
+@Stateless
 public class CrudDao extends ApplicationDao<CrudEntity> {
 	private static final long serialVersionUID = 1L;
 	

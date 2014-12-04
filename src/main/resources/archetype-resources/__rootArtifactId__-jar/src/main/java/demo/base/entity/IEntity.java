@@ -6,7 +6,8 @@ package demo.base.entity;
 import java.io.Serializable;
 
 /**
- * @author Oto
+ * Entity Interface
+ * @author [Author Name]
  *
  */
 public interface IEntity extends Serializable {

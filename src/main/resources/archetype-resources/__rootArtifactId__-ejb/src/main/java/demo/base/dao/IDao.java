@@ -1,6 +1,3 @@
-/**
- * 
- */
 package demo.base.dao;
 
 import java.io.Serializable;
@@ -11,7 +8,8 @@ import javax.persistence.EntityManager;
 import demo.base.entity.IEntity;
 
 /**
- * @author Oto
+ * DAO Interface.
+ * @author [Author Name]
  *
  */
 public interface IDao<E extends IEntity> extends Serializable {

@@ -1,6 +1,3 @@
-/**
- * 
- */
 package demo.base.dao;
 
 import javax.persistence.EntityManager;
@@ -14,7 +11,8 @@ import org.slf4j.LoggerFactory;
 import demo.base.entity.ApplicationEntity;
 
 /**
- * @author Oto
+ * Application DAO.
+ * @author [Author Name]
  *
  */
 public abstract class ApplicationDao<E extends ApplicationEntity> implements IDao<E> {
