@@ -38,6 +38,17 @@
 				<version>${plugin.version.maven-ejb-plugin}</version>
 				<configuration>
 					<ejbVersion>${config.version.ejbversion}</ejbVersion>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+						</manifest>
+						<manifestEntries>
+							<Implementation-Build>${buildNumber}</Implementation-Build>
+							<Implementation-Branch>${scmBranch}</Implementation-Branch>
+							<Implementation-Date>${timestamp}</Implementation-Date>
+						</manifestEntries>
+					</archive>
 				</configuration>
 			</plugin>
 		</plugins>

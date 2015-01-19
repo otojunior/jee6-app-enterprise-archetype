@@ -47,6 +47,17 @@
 				<version>${plugin.version.maven-war-plugin}</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+						</manifest>
+						<manifestEntries>
+							<Implementation-Build>${buildNumber}</Implementation-Build>
+							<Implementation-Branch>${scmBranch}</Implementation-Branch>
+							<Implementation-Date>${timestamp}</Implementation-Date>
+						</manifestEntries>
+					</archive>
 				</configuration>
 			</plugin>
 		</plugins>
