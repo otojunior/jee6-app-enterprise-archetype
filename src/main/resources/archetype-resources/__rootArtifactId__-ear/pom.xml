@@ -128,7 +128,7 @@
 						 
 						<executions>
 							<execution>
-								<phase>install</phase>
+								<phase>deploy</phase>
 								<goals>
 									<goal>run</goal>
 								</goals>
@@ -168,7 +168,7 @@
 		                <version>${plugin.version.jboss-as-maven-plugin}</version>
 		                <executions>
 		                    <execution>
-		                        <phase>install</phase>
+		                        <phase>deploy</phase>
 		                        <goals>
 		                            <goal>run</goal>
 		                        </goals>
