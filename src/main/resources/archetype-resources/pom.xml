@@ -40,7 +40,7 @@
 		<dependency.version.commons-codec>1.9</dependency.version.commons-codec>
 		<dependency.version.jquery>2.1.1</dependency.version.jquery>
 		<dependency.version.javaee-api>6.0</dependency.version.javaee-api>
-		<plugin.version.java>1.7</plugin.version.java>
+		<plugin.version.java>1.8</plugin.version.java>
 		<plugin.version.maven-compiler-plugin>3.1</plugin.version.maven-compiler-plugin>
 		<plugin.version.maven-release-plugin>2.5</plugin.version.maven-release-plugin>
 		<plugin.version.maven-source-plugin>2.2.1</plugin.version.maven-source-plugin>
@@ -59,6 +59,7 @@
 			scm:git:file://localhost/c:/temp/projeto.git
 	 -->
 	<scm>
+		<connection>scm:git:[Git Repo HTTPS URL]</connection>
 		<developerConnection>scm:git:[Git Repo URL]</developerConnection>
 	</scm>
 	
@@ -173,6 +174,25 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>buildnumber-maven-plugin</artifactId>
+				<version>${plugin.version.buildnumber-maven-plugin}</version>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<goals>
+							<goal>create</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<revisionOnScmFailure>true</revisionOnScmFailure>
+					<shortRevisionLength>8</shortRevisionLength>
+					<timestampFormat>{0,date,dd/MM/yyyy HH:mm:ss}</timestampFormat>
+				</configuration>
+			</plugin>
+			
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${plugin.version.maven-compiler-plugin}</version>
@@ -229,25 +249,6 @@
 				<groupId>org.codehaus.sonar</groupId>
 			    <artifactId>sonar-maven3-plugin</artifactId>
 			    <version>${plugin.version.sonar-maven3-plugin}</version>
-			</plugin>
-			
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>buildnumber-maven-plugin</artifactId>
-				<version>${plugin.version.buildnumber-maven-plugin}</version>
-				<executions>
-					<execution>
-						<phase>validate</phase>
-						<goals>
-							<goal>create</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<revisionOnScmFailure>true</revisionOnScmFailure>
-					<shortRevisionLength>8</shortRevisionLength>
-					<timestampFormat>{0,date,dd/MM/yyyy HH:mm:ss}</timestampFormat>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
