@@ -59,6 +59,9 @@
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
+			<properties>
+				<dependency.version.glassfish>3.2-b06</dependency.version.glassfish>
+			</properties>
 			<dependencies>
 				<dependency>
 				    <groupId>org.glassfish.extras</groupId>
@@ -71,6 +74,10 @@
 		
 		<profile>
 			<id>hibernate-profile</id>
+			<properties>
+				<dependency.version.jboss-javaee>3.0.3.Final</dependency.version.jboss-javaee>
+				<dependency.version.hibernate>4.2.15.Final</dependency.version.hibernate>
+			</properties>
 			<dependencies>
 				<dependency>
 		            <groupId>org.jboss.spec</groupId>
@@ -82,7 +89,7 @@
 				
 				<dependency>
 					<groupId>org.hibernate</groupId>
-					<artifactId>hibernate-entitymanager</artifactId>
+					<artifactId>hibernate-core</artifactId>
 					<version>${dependency.version.hibernate}</version>
 					<scope>test</scope>
 				</dependency>
