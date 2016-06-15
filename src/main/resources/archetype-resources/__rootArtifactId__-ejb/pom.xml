@@ -17,7 +17,7 @@
 	
 	<properties>
 		<plugin.version.maven-ejb-plugin>2.5.1</plugin.version.maven-ejb-plugin>
-		<config.version.ejbversion>3.2</config.version.ejbversion>
+		<config.version.ejbversion>3.1</config.version.ejbversion>
 	</properties>
 
 	<dependencies>
