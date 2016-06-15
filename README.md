@@ -16,7 +16,7 @@
 JEE 6 Enterprise (Multi-Module) Archetype
 =========================================
 
-[![Build Status](https://travis-ci.org/otojunior/jee6-app-enterprise-archetype.svg?branch=master)](https://travis-ci.org/otojunior/jee6-app-enterprise-archetype)
+[![Build Status](https://travis-ci.org/otojunior/jee-app-enterprise-archetype.svg?branch=master)](https://travis-ci.org/otojunior/jee-app-enterprise-archetype)
 
 1. Archetype Instalation and Use
 --------------------------------
@@ -34,11 +34,11 @@ JEE 6 Enterprise (Multi-Module) Archetype
 
 **Use Steps:**
 
-1. Command: mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype -DarchetypeArtifactId=jee6-app-enterprise-archetype -DarchetypeVersion=<archetype version> -DgroupId=<your company domain> -DartifactId=<your project> -Dversion=<your project verson> -Dpackage=<your project package> -Dmaven.test.skip=true -B
+1. Command: mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype -DarchetypeArtifactId=jee-app-enterprise-archetype -DarchetypeVersion=<archetype version> -DgroupId=<your company domain> -DartifactId=<your project> -Dversion=<your project verson> -Dpackage=<your project package> -Dmaven.test.skip=true -B
 
 Parameters:
 * archetypeGroupId: MUST BE org.otojunior.archetype
-* archetypeArtifactId: MUST BE jee6-app-simple
+* archetypeArtifactId: MUST BE jee-app-simple
 * archetypeVersion: Archetype version to use to creation.
 * groupId: Your company domain in Iava convention. Ex.: com.acme
 * artifactId: Your project name. Ex.: sampleproject
