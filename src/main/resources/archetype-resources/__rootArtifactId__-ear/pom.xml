@@ -16,8 +16,7 @@
 	<name>${rootArtifactId}: EAR Module</name>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<plugin.version.maven-ear-plugin>2.8</plugin.version.maven-ear-plugin>
+		<plugin.version.maven-ear-plugin>2.10.1</plugin.version.maven-ear-plugin>
 	</properties>
 
 	<build>

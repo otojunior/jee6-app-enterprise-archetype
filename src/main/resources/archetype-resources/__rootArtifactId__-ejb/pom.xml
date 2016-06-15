@@ -16,9 +16,8 @@
     <name>${rootArtifactId}: EJB Module</name>
 	
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<plugin.version.maven-ejb-plugin>2.3</plugin.version.maven-ejb-plugin>
-		<config.version.ejbversion>3.1</config.version.ejbversion>
+		<plugin.version.maven-ejb-plugin>2.5.1</plugin.version.maven-ejb-plugin>
+		<config.version.ejbversion>3.2</config.version.ejbversion>
 	</properties>
 
 	<dependencies>

@@ -16,8 +16,7 @@
 	<name>${rootArtifactId}: WAR Module</name>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<plugin.version.maven-war-plugin>2.4</plugin.version.maven-war-plugin>
+		<plugin.version.maven-war-plugin>2.6</plugin.version.maven-war-plugin>
 	</properties>
 
 	<dependencies>

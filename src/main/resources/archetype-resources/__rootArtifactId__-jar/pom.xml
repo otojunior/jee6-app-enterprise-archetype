@@ -16,8 +16,7 @@
 	<name>${rootArtifactId}: JAR Module</name>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<plugin.version.maven-jar-plugin>2.4</plugin.version.maven-jar-plugin>
+		<plugin.version.maven-jar-plugin>3.0.1</plugin.version.maven-jar-plugin>
 	</properties>
 	
 	<build>
