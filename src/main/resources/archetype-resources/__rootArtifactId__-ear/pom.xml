@@ -74,9 +74,8 @@
 			</activation>
 			
 			<properties>
-				<plugin.version.maven-embedded-glassfish-plugin>3.1.2.2</plugin.version.maven-embedded-glassfish-plugin>
+				<plugin.version.maven-embedded-glassfish-plugin>4.1.1</plugin.version.maven-embedded-glassfish-plugin>
 				<dependency.version.h2>1.3.176</dependency.version.h2>
-				<dependency.version.org.osgi.core>4.3.1</dependency.version.org.osgi.core>
 				<config.maven-embedded-glassfish-plugin.port>8080</config.maven-embedded-glassfish-plugin.port>
 			</properties>
 			
@@ -104,6 +103,7 @@
 							<execution>
 								<phase>deploy</phase>
 								<goals>
+									<goal>deploy</goal>
 									<goal>run</goal>
 								</goals>
 							</execution>
@@ -115,12 +115,6 @@
 								<artifactId>h2</artifactId>
 								<version>${dependency.version.h2}</version>
 							</dependency>
-							
-							<dependency>
-								<groupId>org.osgi</groupId>
-								<artifactId>org.osgi.core</artifactId>
-								<version>${dependency.version.org.osgi.core}</version>
-							</dependency>
 						</dependencies>
 					</plugin>
 				</plugins>
@@ -131,7 +125,7 @@
 			<id>jboss-profile</id>
 			
 			<properties>
-				<plugin.version.jboss-as-maven-plugin>7.5.Final</plugin.version.jboss-as-maven-plugin>
+				<plugin.version.jboss-as-maven-plugin>7.8.Final</plugin.version.jboss-as-maven-plugin>
 			</properties>
 			
 			<build>

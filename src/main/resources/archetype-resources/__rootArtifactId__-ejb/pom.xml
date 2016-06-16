@@ -17,7 +17,7 @@
 	
 	<properties>
 		<plugin.version.maven-ejb-plugin>2.5.1</plugin.version.maven-ejb-plugin>
-		<config.version.ejbversion>3.1</config.version.ejbversion>
+		<config.version.ejbversion>3.2</config.version.ejbversion>
 	</properties>
 
 	<dependencies>
@@ -60,11 +60,11 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<dependency.version.glassfish>3.2-b06</dependency.version.glassfish>
+				<dependency.version.glassfish>4.1.1</dependency.version.glassfish>
 			</properties>
 			<dependencies>
 				<dependency>
-				    <groupId>org.glassfish.extras</groupId>
+				    <groupId>org.glassfish.main.extras</groupId>
 				    <artifactId>glassfish-embedded-all</artifactId>
 				    <version>${dependency.version.glassfish}</version>
 				    <scope>test</scope>
@@ -75,18 +75,17 @@
 		<profile>
 			<id>hibernate-profile</id>
 			<properties>
-				<dependency.version.jboss-javaee>3.0.3.Final</dependency.version.jboss-javaee>
-				<dependency.version.hibernate>4.2.15.Final</dependency.version.hibernate>
+				<dependency.version.jboss-javaee>1.0.3.Final</dependency.version.jboss-javaee>
+				<dependency.version.hibernate>5.2.0.Final</dependency.version.hibernate>
 			</properties>
 			<dependencies>
 				<dependency>
 		            <groupId>org.jboss.spec</groupId>
-		            <artifactId>jboss-javaee-6.0</artifactId>
+		            <artifactId>jboss-javaee-all-7.0</artifactId>
 		            <version>${dependency.version.jboss-javaee}</version>
 		            <type>pom</type>
 		            <scope>test</scope>
 		        </dependency>
-				
 				<dependency>
 					<groupId>org.hibernate</groupId>
 					<artifactId>hibernate-core</artifactId>
