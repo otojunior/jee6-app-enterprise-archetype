@@ -13,8 +13,8 @@
    See the License for the specific language governing permissions and
    limitations under the License.
  -->
-JEE 6 Enterprise (Multi-Module) Archetype
-=========================================
+JEE Enterprise (Multi-Module) Archetype
+=======================================
 
 [![Build Status](https://travis-ci.org/otojunior/jee-app-enterprise-archetype.svg?branch=master)](https://travis-ci.org/otojunior/jee-app-enterprise-archetype)
 
