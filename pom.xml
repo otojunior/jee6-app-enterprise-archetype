@@ -149,12 +149,6 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${plugin.version.maven-surefire-plugin}</version>
 			</plugin>
-			
-			<plugin>
-				<groupId>org.codehaus.sonar</groupId>
-			    <artifactId>sonar-maven3-plugin</artifactId>
-			    <version>${plugin.version.sonar-maven3-plugin}</version>
-			</plugin>
 		</plugins>
 	</build>
 </project>
