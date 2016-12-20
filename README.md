@@ -16,6 +16,7 @@
 JEE 6 Enterprise (Multi-Module) Archetype
 =========================================
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/93cfdaa697c74ba38068392f86f5504a)](https://www.codacy.com/app/otojunior/jee-app-enterprise-archetype?utm_source=github.com&utm_medium=referral&utm_content=otojunior/jee-app-enterprise-archetype&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/otojunior/jee-app-enterprise-archetype.svg?branch=master)](https://travis-ci.org/otojunior/jee-app-enterprise-archetype)
 
 1. Archetype Instalation and Use
