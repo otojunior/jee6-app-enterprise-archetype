@@ -16,6 +16,7 @@
 JEE 6 Enterprise (Multi-Module) Archetype
 =========================================
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/93cfdaa697c74ba38068392f86f5504a)](https://www.codacy.com/app/otojunior/jee-app-enterprise-archetype?utm_source=github.com&utm_medium=referral&utm_content=otojunior/jee-app-enterprise-archetype&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/otojunior/jee-app-enterprise-archetype.svg?branch=master)](https://travis-ci.org/otojunior/jee-app-enterprise-archetype)
 [![Coverage Status](https://coveralls.io/repos/github/otojunior/quickstart-weld-archetype/badge.svg?branch=master)](https://coveralls.io/github/otojunior/quickstart-weld-archetype?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/93cfdaa697c74ba38068392f86f5504a)](https://www.codacy.com/app/otojunior/jee-app-enterprise-archetype?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=otojunior/jee-app-enterprise-archetype&amp;utm_campaign=Badge_Grade)
