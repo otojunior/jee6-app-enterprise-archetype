@@ -28,15 +28,17 @@
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<plugin.version.java>1.8</plugin.version.java>
+		
 		<plugin.version.buildnumber-maven-plugin>1.4</plugin.version.buildnumber-maven-plugin>
-		<plugin.version.maven-compiler-plugin>3.5.1</plugin.version.maven-compiler-plugin>
-		<plugin.version.maven-jar-plugin>2.6</plugin.version.maven-jar-plugin>
+		<plugin.version.maven-compiler-plugin>3.6.1</plugin.version.maven-compiler-plugin>
+		<plugin.version.maven-jar-plugin>3.0.2</plugin.version.maven-jar-plugin>
 		<plugin.version.maven-release-plugin>2.5.3</plugin.version.maven-release-plugin>
-		<plugin.version.maven-source-plugin>3.0.0</plugin.version.maven-source-plugin>
+		<plugin.version.maven-source-plugin>3.0.1</plugin.version.maven-source-plugin>
 		<plugin.version.maven-javadoc-plugin>2.10.4</plugin.version.maven-javadoc-plugin>
-		<plugin.version.maven-surefire-plugin>2.19.1</plugin.version.maven-surefire-plugin>
-		<plugin.version.jacoco-maven-plugin>0.7.8</plugin.version.jacoco-maven-plugin>
+		<plugin.version.maven-surefire-plugin>2.20</plugin.version.maven-surefire-plugin>
+		<plugin.version.jacoco-maven-plugin>0.7.9</plugin.version.jacoco-maven-plugin>
+
+		<config.version.java>1.8</config.version.java>
 	</properties>
 
 	<scm>
@@ -83,8 +85,8 @@
 				<version>${plugin.version.maven-compiler-plugin}</version>
 				<configuration>
 					<!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
-					<source>${plugin.version.java}</source>
-					<target>${plugin.version.java}</target>
+					<source>${config.version.java}</source>
+					<target>${config.version.java}</target>
 				</configuration>
 			</plugin>
 			

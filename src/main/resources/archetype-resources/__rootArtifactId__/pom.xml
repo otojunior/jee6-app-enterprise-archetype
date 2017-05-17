@@ -15,10 +15,6 @@
 
 	<name>${rootArtifactId}: WAR Module</name>
 
-	<properties>
-		<plugin.version.maven-war-plugin>2.6</plugin.version.maven-war-plugin>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>${groupId}</groupId>
