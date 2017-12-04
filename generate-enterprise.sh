@@ -22,7 +22,7 @@
 #
 mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype \
 -DarchetypeArtifactId=jee-app-enterprise-archetype \
--DarchetypeVersion=1.3 \
+-DarchetypeVersion=1.5 \
 -DgroupId=org.otojunior \
 -DartifactId=$1 \
 -Dversion=1.0-SNAPSHOT \
